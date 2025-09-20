@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+    <head>
+        <!-- متا تگ های پایه -->
+        <meta charset="utf-8">
+        <meta name="description" content="پروفایل شخصی ایلیا روزبهانی - برنامه‌نویس و توسعه‌دهنده وب">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        
+        <!-- عنوان صفحه -->
+        <title>پروفایل شخصی | ایلیا روزبهانی</title>
+        
+        <!-- فاوآیکون -->
+        <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    
+        <!-- فایل های CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            #particles-js {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: -1; 
+                pointer-events: none; 
+            }                   
+            :root {
+                --primary-color: #f8f9fa;
+                --secondary-color: #ffffff;
+                --text-color: #212529;
+                --light-text: #6c757d;
+                --accent-color: #e3f2fd;
+                --border-color: #dee2e6;
+            }
+            
+            body {
+                font-family: Vazir, Tahoma, sans-serif;
+                background-color: #f8f8f8; 
+                                color: var(--text-color);
+                line-height: 1.6;
+            }
+            
+            .main-header {
+                background-color: white;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            }
+            
+            .main-menu .navigation li a {
+                color: var(--text-color);
+                padding: 10px 15px;
+                transition: all 0.3s;
+            }
+            
+            .main-menu .navigation li a:hover {
+                color: var(--light-text);
+                background-color: var(--secondary-color);
+                border-radius: 4px;
+            }
+            
+            .main-hero-area {
+                background-color: white;
+            }
+            
+            .hero-content h2 {
+                color: var(--text-color);
+            }
+            
+            .hero-content .highlight span {
+                color: var(--text-color);
+                border-bottom: 2px solid var(--border-color);
+            }
+            
+            .theme-btn {
+                background-color: var(--secondary-color);
+                color: var(--text-color);
+                border: 1px solid var(--border-color);
+            }
+            
+            .theme-btn:hover {
+                background-color: var(--accent-color);
+            }
+            
+            .profile-container {
+                background-color: white;
+                box-shadow:  20px rgba(2, 196, 255, 0.05);
+            }
+            
+            .profile-sidebar {
+                background-color: var(--primary-color);
+                border-left: 1px solid var(--border-color);
+            }
+            
+            .profile-name {
+                color: var(--text-color);
+            }
+            
+            .section-title {
+                border-bottom: 1px solid var(--border-color);
+                color: var(--text-color);
+            }
+            
+            .skill-bar {
+                background-color: var(--secondary-color);
+            }
+            
+            .skill-progress {
+                background-color: var(--light-text);
+            }
+            
+            .three-dimensional-project-card {
+                background-color: white;
+                border: 1px solid var(--border-color);
+                box-shadow: 0 10px 30px rgba(51, 41, 252, 0.204);
+            }
+            
+            .three-dimensional-project-card:hover {
+                box-shadow: 0 10px 30px rgba(51, 41, 252, 0.204);
+            }
+            
+            .three-tier-service-card {
+                background-color: white;
+                border: 1px solid rgba(0, 0, 0, 0.355);
+            }
+            
+            .service-action-button {
+                background-color: var(--secondary-color);
+                color: var(--text-color);
+                border: 1px solid var(--border-color);
+            }
+            
+            .service-action-button:hover {
+                background-color: var(--accent-color);
+            }
+            
+            .info-section {
+                background: #f8f8f8;
+            }
+            
+            .icon-bubble {
+                background-color: var(--secondary-color);
+                color: var(--text-color);
+            }
+            
+            .form-area {
+                    flex: 1 1 55%;
+                    background-color: #0371ff8c ;
+                    border-radius: 15px;
+                    padding: 2rem;
+                
+                              }
+            
+            input, textarea {
+                background-color: var(--primary-color);
+                border: 1px solid var(--border-color);
+            }
+            
+            .send-btn {
+                background-color: var(--secondary-color);
+                color: var(--text-color);
+                border: 1px solid var(--border-color);
+            }
+            
+            .send-btn:hover {
+                background-color: var(--accent-color);
+            }
+            
+            .footer-content {
+                background-color:  #ffffff;
+            }
+            
+            .footer-title {
+                color: var(--text-color);
+            }
+            
+            .footer-about, .footer-contact {
+                color: var(--light-text);
+            }
+            
+            .footer-bottom {
+                background-color: #f2f2f2;
+            }
+            
+            /* عناصر عمومی */
+            .sophisticated-service-header h1 {
+                color: var(--text-color);
+            }
+            
+            .sophisticated-service-header p {
+                color: var(--light-text);
+            }
+            
+            /* انیمیشن‌ها و افکت‌های ظریف */
+            .three-dimensional-project-card,
+            .three-tier-service-card {
+                transition: all 0.3s ease;
+            }
+            
+            .skill-item:hover .skill-progress {
+                background-color: var(--text-color);
+            }
+            </style>
+    </head>
+    <body class="home-one">
+        <div class="cursor-dot"></div>
+        <div class="cursor-ring"></div>
+        
+  <div>
+                        
+            <!-- هدر اصلی -->
+            <header class="main-header menu-absolute">
+                <div class="header-upper">
+                    <div class="container container-1620 clearfix">
+                        <div class="header-inner rel d-flex align-items-center">
+                            
+                            <!-- لوگو -->
+                            <div class="logo-outer">
+                                <div class="logo">
+                                    <a href="index.html"><img src="assets/images/logos/logo.png" alt="لوگو ایلیا روزبهانی"></a>
+                                </div>
+                            </div>
+                            
+                            <!-- منوی ناوبری -->
+                            <div class="nav-outer clearfix mx-auto">
+                                <nav class="main-menu navbar-expand-lg">
+                                    <div class="navbar-header">
+                                        <!-- لوگو موبایل -->
+                                        <div class="mobile-logo my-15">
+                                            <a href="index.html">
+                                                <img src="assets/images/logos/logo.png" alt="لوگو موبایل">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- آیتم های منو -->
+                                    <div class="navbar-collapse collapse clearfix switchers">
+                                        <ul class="navigation onepage clearfix">
+                                            <li><a href="#home">صفحه اصلی</a></li>
+                                            <li><a href="#about">درباره من</a></li>
+                                            <li><a href="#portfolio">نمونه کارها</a></li>
+                                            <li><a href="#project">خدمات</a></li>
+                                            <li><a href="#contact">تماس با من</a></li>
+                                        </ul>
+                                    </div>                            </nav>
+    
+                            </div>
+    
+                                            <!-- دکمه تغییر زبان -->
+                                            <div class="language-switcher">
+                                                <a href="index.html" class="lang-btn active" title="فارسی">
+                                                    <span class="lang-flag">🇮🇷</span>
+                                                    <span class="lang-text">FA</span>
+                                                </a>
+                                                <a href="english.html" class="lang-btn" title="English">
+                                                    <span class="lang-flag" style="color: black;">🇬🇧</span>
+                                                    <span class="lang-text" style="color: black;">EN</span>
+                                                </a>
+                                            </div>     
+                        </div>
+                    </div>
+                </div>
+            </header>        
+            <!-- بخش هیرو (معرفی اولیه) -->
+             
+            <section id="home" class="main-hero-area pt-150 pb-80 rel z-1">
+                <div id="particles-js"></div> 
+                <div class="container container-1620">
+
+                    <div class="row align-items-center">
+                        <!-- متن معرفی -->
+                        <div class="col-lg-4 col-sm-7">
+                            <div class="hero-content rmb-55 wow fadeInUp delay-0-2s">
+                                <span class="h2">سلام، من </span>
+                                <h2 class="highlight">
+                                    <span>ایلیا روزبهانی</span>
+                                    <p style="color: #5a19ff;">برنامه‌نویس</p>
+                                </h2>
+                                <p style="color: black;">آماده‌اید کسب‌وکارتان را متحول کنیم؟ من اینجا هستم تا ایده‌های شما را به واقعیت دیجیتال تبدیل کنم</p>
+                                <div class="hero-btns">
+                                    <a href="#" class="theme-btn"  style="color: #000000;">دانلود رزومه</a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- آمار و ارقام -->
+                        <div class="col-lg-3 col-sm-5 order-lg-3">
+                            <div class="hero-counter-wrap ms-lg-auto rmb-55 wow fadeInUp delay-0-4s">
+                                <div class="counter-item counter-text-wrap">
+                                    <span class="count-text plus" data-speed="3000" data-stop="3"  style="color: #000000;">0</span>
+                                    <span class="counter-title" style="color: #0005a5;">سال تجربه</span>
+                                </div>
+                                <div class="counter-item counter-text-wrap">
+                                    <span class="count-text k-plus" data-speed="3000" data-stop="47"  style="color: #000000;">0</span>
+                                    <span class="counter-title" style="color: #0005a5;">پروژه موفق</span>
+                                </div>
+                                <div class="counter-item counter-text-wrap">
+                                    <span class="count-text percent" data-speed="3000" data-stop="98"  style="color: #000000;">0</span>
+                                    <span class="counter-title" style="color: #0005a5;">رضایت مشتریان</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- تصویر پروفایل -->
+                        <div class="col-lg-5 mobile-hidden">
+                            <div class="author-image-part wow fadeIn delay-0-3s">
+                                <div class="bg-circle"></div>
+                                <img src="assets/images/hero/me2.png" alt="تصویر ایلیا روزبهانی">
+                                <div class="progress-shape">
+                                    <img src="assets/images/hero/progress-shape.png" alt="شکل پیشرفت">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+        </section>
+            
+            <!-- جداکننده -->
+            <center><img src="assets/images/hero/line.png" alt="جداکننده"></center><br>
+            <div class="sophisticated-service-header">
+                <h1>درباره ما </h1>
+                <p>راهکارهای چندبعدی برای نیازهای دیجیتال شما</p>
+            </div>
+    
+            <!-- بخش پروفایل -->
+            <div class="profile-container">
+                <!-- سایدبار پروفایل -->
+                <div class="profile-sidebar">
+                    <img src="./assets/images/favicon.png" alt="ایلیا روزبهانی" class="profile-avatar">
+                    <h1 class="profile-name">ایلیا روزبهانی</h1>
+                    <p class="profile-title" style="color: #111212;">توسعه‌دهنده و برنامه‌نویس</p>
+                    
+                    <!-- اطلاعات تماس -->
+                    <div class="profile-contact">
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background-color: #007bff;">
+                                <i class="fas fa-phone-alt"></i> 
+                                                      </div>
+                            <span  style="color: black;">098631524</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background-color: #007bff;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <span  style="color: black;">example@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon" style="background-color: #007bff;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                            <span  style="color: black;">24 سال</span>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!-- محتوای اصلی پروفایل -->
+                <div class="profile-main" id="about">
+            
+                    <!-- بخش درباره من -->
+                    <h2 class="section-title" style="color: #000a7d;">درباره من</h2>
+                    <p class="about-text">
+                        من ایلیا روزبهانی، فردی پرانگیزه و علاقه‌مند به دنیای برنامه‌نویسی هستم. با شروع تحصیلات و کارآموزی در این زمینه، همواره در حال یادگیری و تقویت مهارت‌هایم هستم. در دوره کارآموزی یکساله‌ام به عنوان فردی متعهد و پرتلاش شناخته شدم و به دنبال فرصت‌هایی برای رشد حرفه‌ای و توسعه مهارت‌های عملی هستم.
+                        <img src="./assets/images/hero/signature1.png" class="img-emza" >
+                    </p>
+                    
+                    <!-- بخش مهارت‌ها -->
+                    <h2 class="section-title"  style="color: #000a7d;">مهارت‌ها</h2>
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>برنامه‌نویسی</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>توسعه وب</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>طراحی رابط کاربری</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name">
+                                <span>حل مسئله</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- بخش سوابق -->
+                    <h2 class="section-title" style="color: #000a7d;">سوابق</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date" style="color: #007bff;">1402 - تاکنون</div>
+                                <h3 class="timeline-title" style="color: #000000;">کارآموز برنامه‌نویسی</h3>
+                                <p>کارآموزی در زمینه توسعه نرم‌افزار و یادگیری مفاهیم پیشرفته برنامه‌نویسی</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" >
+                            <div class="timeline-dot" style="color: #45d7ff;"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date" style="color: #007bff;">1401 - 1402</div>
+                                <h3 class="timeline-title" style="color: #000000;">آموزش برنامه‌نویسی مقدماتی</h3>
+                                <p>گذراندن دوره‌های آموزشی و کسب مهارت‌های پایه در برنامه‌نویسی</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- جداکننده -->
+            <br><center><img src="assets/images/hero/line.png" alt="جداکننده"></center><br>
+            <div class="sophisticated-service-header">
+                <h1>نمونه کار ها </h1>
+                <p>راهکارهای چندبعدی برای نیازهای دیجیتال شما</p>
+            </div>
+    
+            <!-- بخش نمونه کارها -->
+            <main class="dynamic-content-presentation-grid" id="portfolio">
+                <!-- پروژه 1 -->
+                <article class="three-dimensional-project-card">
+                    <div class="project-visual-representation-container">
+                        <img src="./assets/images/project/1.jpg" alt="طراحی وب سایت مدرن">
+                    </div>
+                    <div class="project-metadata-wrapper">
+                        <span class="project-category-indicator">طراحی وب</span>
+                        <h3 class="project-title-heading">طراحی وب سایت شرکتی</h3>
+                        <p class="project-description-paragraph">
+                            طراحی کاملاً ریسپانسیو با قابلیت‌های پیشرفته تعاملی و رابط کاربری مدرن
+                        </p>
+                        <a href="./assets/blog/blog.html" class="interactive-action-button">مشاهده جزئیات</a>
+                    </div>
+                </article>
+                
+                <!-- پروژه 2 -->
+                <article class="three-dimensional-project-card">
+                    <div class="project-visual-representation-container">
+                        <img src="./assets/images/project/2.jpg" alt="اپلیکیشن موبایل">
+                    </div>
+                    <div class="project-metadata-wrapper">
+                        <span class="project-category-indicator">توسعه اپلیکیشن</span>
+                        <h3 class="project-title-heading">اپلیکیشن مدیریت مالی</h3>
+                        <p class="project-description-paragraph">
+                            اپلیکیشن هوشمند مدیریت هزینه‌های شخصی با داشبورد تحلیلی پیشرفته
+                        </p>
+                        <a href="./assets/blog/blog.html" class="interactive-action-button">مشاهده جزئیات</a>
+                    </div>
+                </article>
+                
+                <!-- پروژه 3 -->
+                <article class="three-dimensional-project-card">
+                    <div class="project-visual-representation-container">
+                        <img src="./assets/images/project/3.jpg" alt="هویت بصری برند">
+                    </div>
+                    <div class="project-metadata-wrapper">
+                        <span class="project-category-indicator">برندینگ</span>
+                        <h3 class="project-title-heading">هویت بصری سازمانی</h3>
+                        <p class="project-description-paragraph">
+                            طراحی کامل سیستم هویت بصری شامل لوگو، رنگ‌ها، تایپوگرافی و المان‌های گرافیکی
+                        </p>
+                        <a href="./assets/blog/blog.html" class="interactive-action-button">مشاهده جزئیات</a>
+                    </div>
+                </article>
+                
+                <!-- پروژه 4 -->
+                <article class="three-dimensional-project-card">
+                    <div class="project-visual-representation-container">
+                        <img src="./assets/images/project/4.jpg" alt="طراحی رابط کاربری">
+                    </div>
+                    <div class="project-metadata-wrapper">
+                        <span class="project-category-indicator">UI/UX</span>
+                        <h3 class="project-title-heading">طراحی سیستم طراحی</h3>
+                        <p class="project-description-paragraph">
+                            ایجاد سیستم طراحی یکپارچه با کامپوننت‌های قابل استفاده مجدد برای محصولات دیجیتال
+                        </p>
+                        <a href="./assets/blog/blog.html" class="interactive-action-button">مشاهده جزئیات</a>
+                    </div>
+                </article>
+                
+                <!-- پروژه 5 -->
+                <article class="three-dimensional-project-card">
+                    <div class="project-visual-representation-container">
+                        <img src="./assets/images/project/5.jpg" alt="تصویرسازی دیجیتال">
+                    </div>
+                    <div class="project-metadata-wrapper">
+                        <span class="project-category-indicator">تصویرسازی</span>
+                        <h3 class="project-title-heading">مجموعه تصویرسازی دیجیتال</h3>
+                        <p class="project-description-paragraph">
+                            مجموعه‌ای از تصویرسازی‌های دیجیتال برای استفاده در کمپین‌های تبلیغاتی
+                        </p>
+                        <a href="./assets/blog/blog.html" class="interactive-action-button">مشاهده جزئیات</a>
+                    </div>
+                </article>
+                
+                <!-- پروژه 6 -->
+                <article class="three-dimensional-project-card">
+                    <div class="project-visual-representation-container">
+                        <img src="./assets/images/project/6.jpg" alt="موشن گرافیک">
+                    </div>
+                    <div class="project-metadata-wrapper">
+                        <span class="project-category-indicator">موشن گرافیک</span>
+                        <h3 class="project-title-heading">انیمیشن توضیحی محصول</h3>
+                        <p class="project-description-paragraph">
+                            موشن گرافیک جذاب برای معرفی ویژگی‌های محصول با روایت داستانی
+                        </p>
+                        <a href="./assets/blog/blog.html" class="interactive-action-button">مشاهده جزئیات</a>
+                    </div>
+                </article>
+            </main>
+            <br>
+            <!-- جداکننده -->
+            <center><img src="assets/images/hero/line.png" alt="جداکننده"></center>
+    
+            <!--خدمات-->
+    
+            <div class="sophisticated-service-header">
+                <h1>خدمات تخصصی توسعه وب</h1>
+                <p>راهکارهای چندبعدی برای نیازهای دیجیتال شما</p>
+            </div>
+            
+            <div class="service-card-matrix" id="project">
+                <!-- سرویس 1 -->
+                <div class="three-tier-service-card">
+                    <div class="service-visual-representation">
+                        <img src="./assets/images/project/7.avif" alt="طراحی وب سایت">
+                    </div>
+                    <div class="service-content-wrapper">
+                        <span class="service-category-tag">طراحی وب</span>
+                        <h3 class="service-title-heading">طراحی وب سایت اختصاصی</h3>
+                        <p class="service-description-paragraph">
+                            طراحی کاملاً سفارشی با توجه به نیازهای کسب‌وکار شما و آخرین استانداردهای طراحی 
+                        </p>
+                        <ul class="service-feature-list">
+                            <li class="service-feature-item">طراحی ریسپانسیو و سازگار </li>
+                            <li class="service-feature-item">بهینه‌سازی برای موتورهای جستجو (SEO)</li>
+                            <li class="service-feature-item">رابط کاربری مدرن و جذاب</li>
+                            <li class="service-feature-item">پشتیبانی 6 ماهه رایگان</li>
+                        </ul>
+                        <a href="#contact">
+                        <button class="service-action-button" style="color:white;">درخواست مشاوره</button>
+                    </a>
+                  </div>
+                </div>
+                
+                <!-- سرویس 2 -->
+                <div class="three-tier-service-card">
+                    <div class="service-visual-representation">
+                        <img src="./assets/images/project/8.avif" alt="فروشگاه اینترنتی">
+                    </div>
+                    <div class="service-content-wrapper">
+                        <span class="service-category-tag">تجارت الکترونیک</span>
+                        <h3 class="service-title-heading">فروشگاه اینترنتی پیشرفته</h3>
+                        <p class="service-description-paragraph">
+                            راه‌اندازی کامل فروشگاه آنلاین با تمام امکانات مورد نیاز برای فروش محصولات شما
+                        </p>
+                        <ul class="service-feature-list">
+                            <li class="service-feature-item">سیستم مدیریت محصولات و دسته‌بندی‌ها</li>
+                            <li class="service-feature-item">درگاه پرداخت اینترنتی یکپارچه</li>
+                            <li class="service-feature-item">سیستم مدیریت سفارشات و مشتریان</li>
+                            <li class="service-feature-item">گزارش‌گیری حرفه‌ای</li>
+                        </ul>
+                        <a href="#contact">
+                            <button class="service-action-button" style="color:white;">درخواست مشاوره</button>
+                        </a>
+                        </div>
+                </div>
+                
+                <!-- سرویس 3 -->
+                <div class="three-tier-service-card">
+                    <div class="service-visual-representation">
+                        <img src="./assets/images/project/9.avif" alt="اپلیکیشن موبایل">
+                    </div>
+                    <div class="service-content-wrapper">
+                        <span class="service-category-tag">توسعه اپلیکیشن</span>
+                        <h3 class="service-title-heading">اپلیکیشن موبایل هیبریدی</h3>
+                        <p class="service-description-paragraph">
+                            توسعه اپلیکیشن موبایل سازگار با اندروید و iOS با قابلیت‌های پیشرفته
+                        </p>
+                        <ul class="service-feature-list">
+                            <li class="service-feature-item">توسعه همزمان برای دو پلتفرم</li>
+                            <li class="service-feature-item">امکان اتصال به وب‌سایت موجود</li>
+                            <li class="service-feature-item">طراحی UI/UX اختصاصی</li>
+                            <li class="service-feature-item">پوش نوتیفیکیشن و آپدیت خودکار</li>
+                        </ul>
+                        <a href="#contact">
+                            <button class="service-action-button" style="color:white;">درخواست مشاوره</button>
+                        </a>
+                        </div>
+                </div>
+            </div>
+        <br>
+            <!-- جداکننده -->
+            <center><img src="assets/images/hero/line.png" alt="جداکننده"></center><br>
+            <div class="content-container">
+                <div class="sophisticated-service-header">
+                    <h1>تجربیات مشتریان من</h1>
+                    <p>راهکارهای چندبعدی برای نیازهای دیجیتال شما</p>
+                </div>
+    
+                <div class="testimonial-grid">
+                  <!-- کارت اول -->
+                  <div class="testimonial-card">
+                    <div class="client-profile">
+                        <img src="./assets/images/hero/pexels-photo-614810.jpeg" class="client-avatar" alt="تام بایلی">
+                        <div class="client-details">
+                        <div class="client-name">تام بایلی</div>
+                        <div class="client-position">متخصص SEO، ThemeJunction</div>
+                      </div>
+                    </div>
+                    <div class="quote-symbol">
+                      <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-text">
+                      تیلور نه تنها یک طراح حرفه‌ای است، بلکه با درک عمیق از نیازهای کسب‌وکار من، توانست راهکارهایی ارائه دهد که واقعاً ارزش افزوده ایجاد کرد. پروژه‌ای که انجام دادیم باعث افزایش ۳ برابری ترافیک سایت ما شد.
+                    </div>
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+            
+                  <!-- کارت دوم -->
+                  <div class="testimonial-card">
+                    <div class="client-profile">
+                        <img src="./assets/images/hero/pexels-photo-3775537.jpeg" class="client-avatar" alt="براندون">
+                        <div class="client-details">
+                        <div class="client-name">براندون فراستر</div>
+                        <div class="client-position">توسعه‌دهنده ارشد، Cosmic Sport</div>
+                      </div>
+                    </div>
+                    <div class="quote-symbol">
+                      <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-text">
+                      همکاری با تیلور یک تجربه فوق‌العاده بود. ایشان با ارائه راهکارهای خلاقانه و پیاده‌سازی دقیق، توانستند سیستم مدیریت محتوای اختصاصی ما را به بهترین شکل طراحی کنند. سرعت و دقت کارشان واقعاً قابل تقدیر است.
+                    </div>
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star-half-alt"></i>
+                    </div>
+                  </div>
+            
+                  <!-- کارت سوم -->
+                  <div class="testimonial-card">
+                    <div class="client-profile">
+                        <img src="./assets/images/hero/pexels-photo-2379004.jpeg" class="client-avatar" alt="سارا">
+                        <div class="client-details">
+                        <div class="client-name">سارا جانسون</div>
+                        <div class="client-position">مدیر محصول، مایکروسافت</div>
+                      </div>
+                    </div>
+                    <div class="quote-symbol">
+                      <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="testimonial-text">
+                      تیلور یکی از حرفه‌ای‌ترین توسعه‌دهندگانی است که با آنها کار کرده‌ام. توانایی حل مسئله و خلاقیت ایشان در طراحی رابط کاربری، پروژه ما را به سطح کاملاً جدیدی ارتقا داد. قطعاً برای پروژه‌های آینده نیز با ایشان همکاری خواهیم کرد.
+                    </div>
+                    <div class="star-rating">
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                      <i class="fas fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <br>
+                        <!-- جداکننده -->
+                        <center><img src="assets/images/hero/line.png" alt="جداکننده"></center><br>
+<div class="backgraund">
+
+            <div class="sophisticated-service-header">
+                <h1>تماس با ما  </h1>
+                <p>راهکارهای چندبعدی برای نیازهای دیجیتال شما</p>
+            </div>
+            <!-- بخش تماس با من -->
+            <div class="container-wrap" id="contact">
+                <div class="info-section">
+                    <!-- اطلاعات تماس -->
+                    <div class="info-item">
+                        <div class="icon-bubble"><i class="fas fa-phone-alt" style="color: #ffffff;"></i> 
+                        </div>
+                        <div>
+                            <small>شماره تماس</small><br>
+                            +98 912 345 6789
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-bubble email"><i class="fas fa-envelope"  style="color: #ffffff;"></i>
+                        </div>
+                        <div>
+                            <small>ایمیل</small><br>
+                            example@gmail.com
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="icon-bubble"> <i class="fas fa-map-marker-alt"  style="color: #ffffff;"></i></div>
+                        <div>
+                            <small>آدرس</small><br>
+                            تهران، تجریش
+                        </div>
+                    </div>
+                </div>
+                <!-- فرم تماس -->
+                <div class="form-area">
+                    <h2 style="color: rgb(0, 0, 0);">درخواست مشاوره</h2>
+                    <p   style="color: black;">من چیزهای ساده و زیبا را طراحی و کدنویسی می‌کنم و کارهایی را که انجام می‌دهم دوست دارم. همین‌طور ساده!</p>
+                    <form action="./assets/contact.php" method="post">
+                        <div class="form-grid">
+                            <input type="text" placeholder="نام">
+                            <input type="text" placeholder="نام خانوادگی">
+                            <input type="email" placeholder="ایمیل">
+                            <input type="text" placeholder="شماره تماس">
+                        </div>
+                        <textarea placeholder="پیام شما"></textarea>
+                        <button type="submit" class="send-btn"  style="color: rgb(255, 255, 255);">ارسال پیام</button>
+                </div>
+            </div>
+            </form>
+        </div>
+            <!-- جداکننده -->
+            <center><img src="assets/images/hero/line.png" alt="جداکننده"></center><br>
+            <div class="sophisticated-service-header">
+                <h1>نقشه  </h1>
+                <p>راهکارهای چندبعدی برای نیازهای دیجیتال شما</p>
+            </div>
+            <!-- بخش نقشه -->
+            <div class="sophisticated-ornamental-frame-with-gradient">
+                <div class="frame-content">
+                  <input class="map-address" type="hidden" value="">
+                  <div class="map-wrapper">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d43577.404140094004!2d51.40463166608585!3d35.728433335932735!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0710d5918403%3A0x74f5290b67841378!2z2KjYsdisINmF24zZhNin2K8!5e0!3m2!1sfa!2sus!4v1750080158005!5m2!1sfa!2sus"
+                      allowfullscreen=""
+                      loading="lazy"
+                      referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                  </div>
+                </div>
+              </div>
+              <br>
+              
+            <!-- فوتر -->
+            <footer class="profile-footer">
+                <!-- موج فوتر -->
+                <div class="footer-wave">
+
+                    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                        <defs>
+                            <linearGradient id="waveGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" stop-color="#ffffff"></stop> <!-- آبی روشن در بالا -->
+                                <stop offset="100%" stop-color="#03ffe6"></stop> <!-- سفید در پایین -->
+                            </linearGradient>
+                        </defs>
+                        <path d="M1200,0V46.29c-47.79,22.2-103.59,32.17-158,28-70.36-5.37-136.33-33.31-206.8-37.5C773.36,32.43,699.66,53.67,629,72.05c-69.27,18-138.3,24.88-209.4,13.08-36.15-6-69.85-17.84-104.45-29.34C210.51,25,87-14.29,0,52.47V0Z" 
+                              opacity=".25" 
+                              fill="url(#waveGradient)"></path>
+                        <path d="M1200,0V15.81c-13,36.92-27.64,56.86-47.69,72.05C1099.41,111.27,1035,111,975.42,91.58c-31.15-10.15-60.09-26.07-89.67-39.8-40.92-19-84.73-46-130.83-49.67-36.26-2.85-70.9,9.42-98.6,31.56-31.77,25.39-62.32,62-103.63,73-40.44,10.79-81.35-6.69-119.13-24.28s-75.16-39-116.92-43.05c-59.73-5.85-113.28,22.88-168.9,38.84-30.2,8.66-59,6.17-87.09-7.5-22.43-10.89-48-26.93-60.65-49.24V0Z" 
+                              opacity=".5" 
+                              fill="url(#waveGradient)"></path>
+                        <path d="M1200,0V5.63C1050.07,59,885.91,71.32,724.17,42.57c-43-7.64-84.23-20.12-127.61-26.46-59-8.63-112.48,12.24-165.56,35.4C372.07,77.22,314,95.24,248.8,90c-86.53-7-172.46-45.71-248.8-84.81V0Z" 
+                              fill="url(#waveGradient)"></path>
+                    </svg>
+                </div>
+                <!-- محتوای فوتر -->
+                <div class="footer-content" style="color: #ffffff;">
+                    <div class="footer-column">
+                        <h3 class="footer-title" style="color: #0091ff;">درباره من</h3>
+                        <p class="footer-about">
+                            برنامه‌نویس جوان و پرانگیزه با علاقه به توسعه نرم‌افزار و فناوری‌های جدید و یادگیری مستمر.
+                        </p>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3 class="footer-title" style="color: #0091ff;">تماس با من</h3>
+                        <ul class="footer-contact">
+                            <li> تهران، ایران</li>
+                            <li> example@gmail.com</li>
+                            <li> +98 987 654 3210</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- بخش پایینی فوتر -->
+                <div class="footer-bottom">
+                    <p class="copyright">
+                        © 2025 تمام حقوق برای <span>ایلیا روزبهانی</span> محفوظ است
+                    </p>
+            </div>
+        </footer>
+
+    
+        <!-- اسکریپت های جاوااسکریپت -->
+        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+        <script src="assets/js/jquery-3.6.0.min.js"></script>
+        <script src="assets/js/appear.min.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script>  
+           
+            function toPersianNumbers(input) {
+            const persianDigits = '۰۱۲۳۴۵۶۷۸۹';
+            return input.toString().replace(/[0-9]/g, (d) => persianDigits[d]);
+          }
+          document.querySelectorAll('body *').forEach(element => {
+            element.childNodes.forEach(node => {
+              if (node.nodeType === Node.TEXT_NODE) {
+                node.textContent = toPersianNumbers(node.textContent);
+              }
+            });
+          });
+          
+          
+          // تابع تبدیل اعداد انگلیسی به فارسی
+          // تابع فارسی کردن اعداد
+          function convertDigitsToPersian(element) {
+              const persianDigits = ['۰', '۱', '۲', '۳', '۴', '۵', '۶', '۷', '۸', '۹'];
+              element.textContent = element.textContent.replace(/\d/g, d => persianDigits[d]);
+            }
+            
+            // مشاهدهگر تغییرات برای تمام شمارنده‌ها
+            const counterObserver = new MutationObserver((mutations) => {
+              mutations.forEach((mutation) => {
+                if (mutation.type === 'characterData' || mutation.type === 'childList') {
+                  convertDigitsToPersian(mutation.target);
+                }
+              });
+            });
+            
+            // تابع تبدیل اعداد به فارسی
+          function toPersianNumber(number) {
+              const persianDigits = '۰۱۲۳۴۵۶۷۸۹';
+              return number.toString().replace(/\d/g, d => persianDigits[d]);
+            }
+            
+            // مشاهده تغییرات اعداد در حین انیمیشن
+            function observeCounterChanges() {
+              const counters = document.querySelectorAll('.count-text');
+              
+              counters.forEach(counter => {
+                const observer = new MutationObserver(() => {
+                  // تبدیل عدد فعلی به فارسی
+                  if (counter.textContent.match(/^\d+$/)) {
+                    counter.textContent = toPersianNumber(counter.textContent);
+                  }
+                });
+                
+                // شروع مشاهده تغییرات متن
+                observer.observe(counter, {
+                  characterData: true,
+                  childList: true,
+                  subtree: true
+                });
+              });
+            }
+            
+            // اجرا پس از بارگذاری صفحه
+            document.addEventListener('DOMContentLoaded', function() {
+              // کمی تاخیر برای اطمینان از بارگذاری انیمیشن
+              setTimeout(observeCounterChanges, 5);
+            });    </script>
+                    
+        </body>
+</html>
